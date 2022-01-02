@@ -1,7 +1,7 @@
-apiVersion: kkube.kni.io/v1beta1
-kind: openshiftcluster
+apiVersion: openshift.kkube.kni.io/v1alpha1
+kind: Cluster
 metadata:
-  name: clusterexample
+  name: cluster-sample
 spec:
   masters: 
     virtaul: 3
