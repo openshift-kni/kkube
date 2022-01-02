@@ -6,4 +6,14 @@ plugins:
   scorecard.sdk.operatorframework.io/v2: {}
 projectName: kkube
 repo: github.com/yuvalk/kkube
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: kkube.kni.io
+  group: openshift
+  kind: Cluster
+  path: github.com/yuvalk/kkube/api/v1alpha1
+  version: v1alpha1
 version: "3"
